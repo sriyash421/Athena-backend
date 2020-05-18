@@ -1,6 +1,8 @@
 import json
-from app.models.slots import Slots
+
 from app import db
+from app.models.slots import Slots
+
 slots = []
 with open("scripts/slots.json","r") as fin:
     slots = json.load(fin)

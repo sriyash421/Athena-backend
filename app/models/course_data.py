@@ -1,5 +1,6 @@
-from app import db, admin
 from flask_admin.contrib.sqla import ModelView
+
+from app import admin, db
 
 
 class course_data(db.Model):

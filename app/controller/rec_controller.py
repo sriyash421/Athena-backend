@@ -1,6 +1,8 @@
 from flask import jsonify, request
+
 from app import app
 from app.models.course_data import course_data
+
 
 @app.route("/recommend", methods=['GET','POST','OPTIONS'])
 def recommend():
@@ -14,7 +16,7 @@ def run_recommend(queries):
     results = {}
     for query in queries :
         search = app.elasticsearch.search(
-            index="course",
+            index="course_info",
             body={'query': {'multi_match': {'query': query, 'fields': ['*']}}})
         ids = [int(hit['_id']) for hit in search['hits']['hits']]
         scores = [float(hit['_score']) for hit in search['hits']['hits']]

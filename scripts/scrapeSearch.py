@@ -1,6 +1,7 @@
 import json
-import requests
 import string
+
+import requests
 from bs4 import BeautifulSoup
 from tqdm import trange
 

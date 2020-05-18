@@ -1,6 +1,8 @@
 from flask import jsonify, request
+
 from app import app
 from app.models.slots import Slots
+
 
 @app.route("/course_slots", methods=['GET','POST','OPTIONS'])
 def slots():

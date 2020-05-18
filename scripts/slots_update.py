@@ -1,4 +1,5 @@
 import json
+
 data = None
 with open("schedule.json","r") as fin:
     data = json.load(fin)
