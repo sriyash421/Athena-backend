@@ -8,9 +8,9 @@ import os
 
 app = Flask(__name__)
 cors = CORS(app)
-app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")'f9bf78b9a18ce6d46a0cd2b0b86df9da'
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("SQLALCHEMY_DATABASE_URL") 'sqlite:///site.db'
-app.config["ELASTICSEARCH_URL"]= os.environ.get("ELASTIC_SEARCH") "http://localhost:9200"
+app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("SQLALCHEMY_DATABASE_URL")
+app.config["ELASTICSEARCH_URL"]= os.environ.get("ELASTIC_SEARCH")
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 db = SQLAlchemy(app)
