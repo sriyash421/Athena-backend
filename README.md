@@ -30,3 +30,9 @@ Created as part of Software Engineering Lab (CS29006) during my 4th semester (Sp
 - `controller` contains the various endpoints to fetch data, and run the utility functions
 - `models` contains the SQLLite models for the app
 
+## Running the app
+```shell
+pip install -r requirements.txt
+python run.py
+```
+
