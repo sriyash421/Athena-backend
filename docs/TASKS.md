@@ -51,3 +51,10 @@ The following are the tasks completed :
 
 
 #### All functionalities are implemented with the users identity being anonymous.
+
+
+#### Further Work :
+- Add ML/DL approaches to generate robust recommendation
+- Improve security by using encryption
+- Scrape more data to make the system widely usable
+- Add options to send media in chat, notices.
