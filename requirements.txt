@@ -4,7 +4,7 @@ elasticsearch==7.6.0
 eventlet==0.25.2
 Flask==1.1.2
 Flask-Admin==1.5.6
-Flask-Cors==3.0.8
+Flask-Cors==3.0.9
 Flask-SocketIO==4.3.0
 Flask-SQLAlchemy==2.4.1
 gevent==20.5.0
